@@ -4,6 +4,7 @@ import org.example.builders.UserAuthDetailsBuilder;
 import org.example.clients.authentication.AuthClient;
 import org.example.clients.authentication.AuthRequest;
 import org.example.clients.authentication.AuthResponse;
+import org.example.entities.UserDetails;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import restfulbooker_api_tests.BaseTest;
@@ -17,6 +18,12 @@ public class AuthTest extends BaseTest {
 
        Assert.assertEquals(authResponse.getHttpStatusCode(),200);
        Assert.assertNotNull(authResponse.getToken());
+
+       UserDetails user = new UserDetails();
+       user.setToken(authResponse.getToken());
+
+       System.out.println(user.getToken()+" and "+authResponse.getToken());
+       Assert.assertEquals(user.getToken(),authResponse.getToken());
 
     }
 
