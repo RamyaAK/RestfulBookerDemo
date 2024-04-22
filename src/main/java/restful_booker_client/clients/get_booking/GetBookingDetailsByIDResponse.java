@@ -1,9 +1,9 @@
-package org.example.clients.create_new_booking;
+package restful_booker_client.clients.get_booking;
 
-import org.example.entities.Bookingdates;
+import restful_booker_client.clients.BaseResponse;
+import restful_booker_client.entities.Bookingdates;
 
-public class CreateBookingRequest {
-
+public class GetBookingDetailsByIDResponse extends BaseResponse {
     public String firstname;
     public String lastname;
     public int totalprice;

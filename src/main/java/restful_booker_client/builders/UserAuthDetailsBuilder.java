@@ -1,6 +1,6 @@
-package org.example.builders;
+package restful_booker_client.builders;
 
-import org.example.clients.authentication.AuthRequest;
+import restful_booker_client.clients.authentication.AuthRequest;
 
 public class UserAuthDetailsBuilder {
     public AuthRequest authRequest;

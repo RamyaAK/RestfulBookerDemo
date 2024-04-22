@@ -1,15 +1,14 @@
-package org.example.clients.get_booking;
+package restful_booker_client.entities;
 
-import org.example.clients.BaseResponse;
-import org.example.entities.Bookingdates;
-
-public class GetBookingDetailsByIDResponse extends BaseResponse {
+public class Booking {
     public String firstname;
     public String lastname;
     public int totalprice;
     public boolean depositpaid;
     public Bookingdates bookingdates;
     public String additionalneeds;
+
+    public int bookingId;
 
     public String getFirstname() {
         return firstname;
@@ -57,5 +56,13 @@ public class GetBookingDetailsByIDResponse extends BaseResponse {
 
     public void setAdditionalneeds(String additionalneeds) {
         this.additionalneeds = additionalneeds;
+    }
+
+    public int getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(int bookingId) {
+        this.bookingId = bookingId;
     }
 }

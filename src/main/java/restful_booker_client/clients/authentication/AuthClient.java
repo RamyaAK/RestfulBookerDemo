@@ -1,4 +1,4 @@
-package org.example.clients.authentication;
+package restful_booker_client.clients.authentication;
 
 import io.restassured.response.Response;
 

@@ -1,4 +1,4 @@
-package org.example.clients.get_booking;
+package restful_booker_client.clients.get_booking;
 
 import io.restassured.response.Response;
 

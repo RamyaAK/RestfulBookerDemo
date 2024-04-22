@@ -1,6 +1,6 @@
-package org.example.clients.authentication;
+package restful_booker_client.clients.authentication;
 
-import org.example.clients.BaseResponse;
+import restful_booker_client.clients.BaseResponse;
 
 
 

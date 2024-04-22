@@ -1,14 +1,14 @@
-package org.example.entities;
+package restful_booker_client.clients.update_booking;
 
-public class BookingDetails {
+import restful_booker_client.entities.Bookingdates;
+
+public class UpdateBookingRequest {
     public String firstname;
     public String lastname;
     public int totalprice;
     public boolean depositpaid;
     public Bookingdates bookingdates;
     public String additionalneeds;
-
-    public int bookingId;
 
     public String getFirstname() {
         return firstname;
@@ -56,13 +56,5 @@ public class BookingDetails {
 
     public void setAdditionalneeds(String additionalneeds) {
         this.additionalneeds = additionalneeds;
-    }
-
-    public int getBookingId() {
-        return bookingId;
-    }
-
-    public void setBookingId(int bookingId) {
-        this.bookingId = bookingId;
     }
 }

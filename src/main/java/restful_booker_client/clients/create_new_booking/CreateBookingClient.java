@@ -1,4 +1,4 @@
-package org.example.clients.create_new_booking;
+package restful_booker_client.clients.create_new_booking;
 
 import io.restassured.response.Response;
 

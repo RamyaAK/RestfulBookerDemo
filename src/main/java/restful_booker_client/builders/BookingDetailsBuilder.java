@@ -1,7 +1,7 @@
-package org.example.builders;
+package restful_booker_client.builders;
 
-import org.example.clients.create_new_booking.CreateBookingRequest;
-import org.example.entities.Bookingdates;
+import restful_booker_client.clients.create_new_booking.CreateBookingRequest;
+import restful_booker_client.entities.Bookingdates;
 
 public class BookingDetailsBuilder {
 

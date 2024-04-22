@@ -1,6 +1,6 @@
-package org.example.clients.get_booking;
+package restful_booker_client.clients.get_booking;
 
-import org.example.clients.BaseResponse;
+import restful_booker_client.clients.BaseResponse;
 
 public class GetBookingResponse extends BaseResponse {
     public int bookingid;

@@ -1,4 +1,4 @@
-package org.example.entities;
+package restful_booker_client.entities;
 
 public class UserDetails {
     private String firstName;

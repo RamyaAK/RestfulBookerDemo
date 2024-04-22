@@ -1,4 +1,4 @@
-package org.example.entities;
+package restful_booker_client.entities;
 
 public class Bookingdates {
     public String checkin;

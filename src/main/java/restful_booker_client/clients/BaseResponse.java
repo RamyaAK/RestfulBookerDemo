@@ -1,4 +1,4 @@
-package org.example.clients;
+package restful_booker_client.clients;
 
 public class BaseResponse {
     protected int httpStatusCode;

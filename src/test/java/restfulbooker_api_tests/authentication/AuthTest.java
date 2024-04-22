@@ -1,10 +1,10 @@
 package restfulbooker_api_tests.authentication;
 
-import org.example.builders.UserAuthDetailsBuilder;
-import org.example.clients.authentication.AuthClient;
-import org.example.clients.authentication.AuthRequest;
-import org.example.clients.authentication.AuthResponse;
-import org.example.entities.UserDetails;
+import restful_booker_client.builders.UserAuthDetailsBuilder;
+import restful_booker_client.clients.authentication.AuthClient;
+import restful_booker_client.clients.authentication.AuthRequest;
+import restful_booker_client.clients.authentication.AuthResponse;
+import restful_booker_client.entities.UserDetails;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import restfulbooker_api_tests.BaseTest;

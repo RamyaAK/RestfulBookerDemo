@@ -1,8 +1,7 @@
-package org.example.clients.create_new_booking;
+package restful_booker_client.clients.create_new_booking;
 
-import org.example.clients.BaseResponse;
-import org.example.entities.Booking;
-import org.example.entities.Bookingdates;
+import restful_booker_client.clients.BaseResponse;
+import restful_booker_client.entities.Booking;
 
 public class CreateBookingResponse extends BaseResponse {
 

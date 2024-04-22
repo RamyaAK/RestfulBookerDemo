@@ -1,4 +1,4 @@
-package org.example.clients.authentication;
+package restful_booker_client.clients.authentication;
 
 public class AuthRequest {
     public String username;
