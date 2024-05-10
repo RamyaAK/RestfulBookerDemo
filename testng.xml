@@ -14,6 +14,7 @@
                     <include name="getBookingDetailsByIDTest"/>
                     <include name="createANewBookingTest"/>
                     <include name="updateBookingDetailsTest"/>
+                    <include name="deleteBookingByIDTest"/>
                 </methods>
             </class>
         </classes>

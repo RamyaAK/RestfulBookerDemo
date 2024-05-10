@@ -1,6 +1,5 @@
 package restfulbooker_api_tests.booking;
 
-import org.testng.annotations.BeforeTest;
 import restful_booker_client.builders.BookingDetailsBuilder;
 import restful_booker_client.builders.UpdateBookingDetailsBuilder;
 import restful_booker_client.builders.UserAuthDetailsBuilder;
@@ -10,6 +9,7 @@ import restful_booker_client.clients.authentication.AuthResponse;
 import restful_booker_client.clients.create_new_booking.CreateBookingClient;
 import restful_booker_client.clients.create_new_booking.CreateBookingRequest;
 import restful_booker_client.clients.create_new_booking.CreateBookingResponse;
+import restful_booker_client.clients.delete_booking_by_id.DeleteBookingByIdClient;
 import restful_booker_client.clients.get_booking.GetBookingClient;
 import restful_booker_client.clients.get_booking.GetBookingDetailsByIDClient;
 import restful_booker_client.clients.get_booking.GetBookingDetailsByIDResponse;
@@ -88,5 +88,17 @@ public class BookingTests extends BaseTest {
         System.out.println("Token Value = " + tokenValue);
         return tokenValue;
     }
+    @Test(priority=5)
+    public void deleteBookingByIDTest(){
+        // Authenticate user
+        String userToken = authenticateUser();
 
+        // create a new Booking
+        int  booking_Id = bookingId;
+
+        // delete Booking by passing the token and Booking Id to be deleted.
+        DeleteBookingByIdClient deleteBookingByIdClient = new DeleteBookingByIdClient();
+        deleteBookingByIdClient.deleteBookingById(userToken,booking_Id);
+
+    }
 }
