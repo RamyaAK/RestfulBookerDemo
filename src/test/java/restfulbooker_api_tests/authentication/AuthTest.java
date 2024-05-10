@@ -11,8 +11,8 @@ import restfulbooker_api_tests.BaseTest;
 
 public class AuthTest extends BaseTest {
 
-   @Test(priority = 0)
-   public void UserAuthTest(){
+   @Test(priority = 1)
+   public void userAuthTest(){
        AuthRequest authRequest = new UserAuthDetailsBuilder().build();
        AuthResponse authResponse = new AuthClient().authenticateUser(authRequest);
 

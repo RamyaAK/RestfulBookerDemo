@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="false">
+    <test verbose="2" preserve-order="true" name="RestFulBookerDemoTests">
+        <classes>
+            <class name="restfulbooker_api_tests.authentication.AuthTest">
+                <methods>
+                    <include name="userAuthTest"/>
+                </methods>
+            </class>
+            <class name="restfulbooker_api_tests.booking.BookingTests">
+                <methods>
+                    <include name="getAllBookingIdsTest"/>
+                    <include name="getBookingDetailsByIDTest"/>
+                    <include name="createANewBookingTest"/>
+                    <include name="updateBookingDetailsTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

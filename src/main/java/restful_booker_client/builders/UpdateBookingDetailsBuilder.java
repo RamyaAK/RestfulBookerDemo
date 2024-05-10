@@ -12,11 +12,14 @@ public class UpdateBookingDetailsBuilder {
         updateBookingRequest = new UpdateBookingRequest();
         bookingdates = new UpdateBookingDatesBuilder().build();
         updateBookingRequest.setFirstname("Rocky");
-        updateBookingRequest.setLastname("Bhai");
+        updateBookingRequest.setLastname("bhai");
         updateBookingRequest.setTotalprice(2222);
         updateBookingRequest.setDepositpaid(true);
         updateBookingRequest.setBookingdates(bookingdates);
         updateBookingRequest.setAdditionalneeds("Nothing");
 
+    }
+    public UpdateBookingRequest build(){
+        return updateBookingRequest;
     }
 }
